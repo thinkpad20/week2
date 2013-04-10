@@ -1,0 +1,18 @@
+<h1>Landmarks</h1>
+
+<!-- <img src="http://www.chicagoarchitecture.info/CAI/Images/TheLoop/SearsTower-010.jpg"> -->
+
+<%= image_tag "http://www.chicagoarchitecture.info/CAI/Images/TheLoop/SearsTower-010.jpg", :width => 100 %>
+<!-- <img src="http://graph.facebook.com/4/picture"> -->
+
+<%= image_tag "http://graph.facebook.com/4/picture", :width => 100 %>
+
+<!-- <a href="http://www.google.com">Search For Something</a> -->
+
+<%= link_to "Search for Something", "http://www.google.com", :onclick => "alert('Hello');",  :class => 'ext_link' %>
+
+<ul>
+  <% @landmarks.each do |landmark| %>
+    <li><%= landmark %></li>
+  <% end %>
+</ul>
