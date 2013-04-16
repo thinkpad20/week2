@@ -1,0 +1,10 @@
+<% @links.each do |link| %>
+	<%= link_to link[:name], link[:url] %>
+<% end %>
+<br><br>
+<% @faves.each do |fave| %>
+	<p>I like:  <div class="image">
+				<a href="<%= fave[:wikipedia] %>"><img src="<%= fave[:img] %>"></a>
+				<div><%= fave[:name] %></div>
+				</div> </p>
+<% end %>
